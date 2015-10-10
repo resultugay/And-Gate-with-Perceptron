@@ -26,7 +26,7 @@ public class And extends JFrame implements ActionListener{
 	public static double w [] = {-0.5,1,1};
 	
 	public static JLabel x11;
-	public static JLabel cikis;
+	public static JLabel output;
 	public static JLabel x22;
     public	static JLabel []xLabels;
     public static JLabel b11;
@@ -99,9 +99,9 @@ public class And extends JFrame implements ActionListener{
 		test.addActionListener(this);
 		
 		
-		cikis = new JLabel("");
-		cikis.setSize(70,10);
-		cikis.setLocation(435, 255);
+		output = new JLabel("");
+		output.setSize(70,10);
+		output.setLocation(435, 255);
 
 		
 		
@@ -114,7 +114,7 @@ public class And extends JFrame implements ActionListener{
 		generalPanel.add(w22);
 		generalPanel.add(train);
 		generalPanel.add(test);
-		generalPanel.add(cikis);
+		generalPanel.add(output);
 		
 		x1Text = new JTextField();
 		x1Text.setSize(40,30);
@@ -177,11 +177,11 @@ public class And extends JFrame implements ActionListener{
 			double y = -1*w[0]+ x1 * w[1] + x2 * w[2];
 			if(y >= 0){
 				y = +1;
-				cikis.setText("cikis :"+y);
+				output.setText("output :"+y);
 			}
 			else{
 				y = -1;
-				cikis.setText("cikis :"+y);
+				output.setText("output :"+y);
 			}
 			//JOptionPane.showMessageDialog(null, "Sonuc  " + y);
 		}

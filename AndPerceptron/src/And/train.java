@@ -16,11 +16,11 @@ public class train extends Thread{
 			
 			if(y[i] >= 0){
 				y[i] = +1;
-				cikis.setText(y[i] +"");
+				output.setText(y[i] +"");
 			}
 			else{
 				y[i] = -1;
-				cikis.setText(y[i] +"");
+				output.setText(y[i] +"");
 			}
 			//System.out.println("y" + i + " " + y[i]);
 			for(int j = 0 ; j < 3 ; j++){
